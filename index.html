@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ToDo</title>
+    <script defer src="./js/todo.js" defer></script>
+  </head>
+  <body>
+
+    <header class="head">
+      <div class="icon">
+        <img width="100px" src="./1/icon128x128.png" alt="ToDo" />
+      </div>
+      <div class="H1"><h1>To Do List</h1></div>
+      <a href="./index-2.html" id="name"><h2>Войти</h2></a>
+    </header>
+    <main>
+      <input type="text" id="taskInput" placeholder="New Task" />
+      <input
+        type="text"
+        id="filterInput"
+        placeholder="Search"
+      />
+      <button id="add">Add</button>
+      <div id="radio">
+        <input type="radio" name="radio" value="NotOk">Показать невыполненное </br>
+        <input type="radio" name="radio" value="Ok">Показать выполненное </br>
+        <input type="radio" name="radio" value="All" checked="checked">Показать все
+      </div>
+      <ul id="taskList"></ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
